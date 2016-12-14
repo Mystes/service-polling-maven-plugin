@@ -4,7 +4,7 @@
 
   <groupId>fi.mystes.maven</groupId>
   <artifactId>service-polling-maven-plugin</artifactId>
-  <version>1.0</version>
+  <version>1.0.1-SNAPSHOT</version>
   <packaging>maven-plugin</packaging>
 
   <name>polling-maven-plugin Maven Plugin</name>

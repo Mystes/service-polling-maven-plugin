@@ -1,4 +1,5 @@
 # service-polling-maven-plugin
+[![CircleCI](https://circleci.com/gh/Mystes/service-polling-maven-plugin.svg?style=shield&circle-token=88cf24e6512f7f2fd93a1611555762a14a96069b)](https://circleci.com/gh/Mystes/service-polling-maven-plugin)
 
 Service Polling Maven plugin will wait until the given URL responds and then it lets the maven build process to continue.
 This maven plugin is useful in integration testing where you have server processes that you need to start before tests can be run, but you don't know how long the starting process takes.

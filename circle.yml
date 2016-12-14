@@ -1,0 +1,22 @@
+## Customize the test machine
+machine:
+  java:
+    version: oraclejdk6
+
+dependencies:
+  pre:
+    - cp ci/settings.xml ~/.m2/
+
+  # Cache maven local repository so that we don't have to get dependencies every time
+  cache_directories:
+    - ~/.m2/repository
+
+test:
+  override:
+    - mvn clean install -Prun-its
+
+deployment:
+  bintray:
+    branch: master
+    commands:
+      - mvn deploy
